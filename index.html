@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Text2Live2D">
+  <meta property="og:title" content="Text2Live2D"/>
+  <meta property="og:description" content="Text2Live2D"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Text2Live2D">
+  <meta name="twitter:description" content="Text2Live2D">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Text2Live2D</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Text2Live2D: High Quality Text-to-3D Character Generation within Minutes</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=NtNr6X0AAAAJ" target="_blank">Jianqiang Ren</a>,</span>
+                <span class="author-block">
+                <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Chao He</a>,</span>
+                <span class="author-block">
+                     <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Lin Liu</a>,</span>
+                <span class="author-block">
+                    <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Jiahao Chen</a>,</span>
+                <span class="author-block">
+                 <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Yutong Wang</a>,</span>
+                <span class="author-block">
+                 <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Yafei Song</a>,</span>
+                <span class="author-block">
+                 <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Jianfang Li</a>,</span>
+                <span class="author-block">
+                <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Tangli Xue</a>,</span>
+                <span class="author-block">
+                 <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Siqi Hu</a>,</span>
+                <span class="author-block">
+                <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Tao Chen</a>,</span>
+                <span class="author-block">
+                <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Kunkun Zheng</a>,</span>
+                <span class="author-block">
+                 <a href="mailto:yichao.hc@alibaba-inc.com" target="_blank">Jianjing Xiang</a>,</span>
+                <span class="author-block">
+
+                <a href="https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=zh-CN" target="_blank">Liefeng Bo</a>
+                </span>
+                </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institute for Intelligent Computing，Alibaba Group</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2312.15430.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                               <!-- Video link -->
+                    <span class="link-block">
+                      <a href="https://youtu.be/f6hkGOr_Xrc" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Youtube</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Human3DAIGC/Text2Live2D" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span>
+
+                  <!-- Demo link -->
+                  <span class="link-block">
+                    <a href="https://www.modelscope.cn/studios/XR-3D/InstructDynamicAvatar/summary" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-youtube-play"></i>-->
+<!--                    </span>-->
+                    <span>Demo</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="80%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.-->
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+  <!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" controls loop height="80%">
+        <!-- Your video here -->
+        <source src="static/videos/audio2face/poetry.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.-->
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            There is a growing demand for customized and expressive 3D characters with the emergence of AI agents and Metaverse, but creating 3D characters using traditional computer graphics tools is a complex and time-consuming task. To address these challenges, we propose a user-friendly framework named Text2Live2D (Mach) to create lifelike 3D avatars from text descriptions. The framework leverages the power of large language and vision models for textual intention understanding and intermediate image generation, followed by a series of human-oriented visual perception and 3D generation modules. Our system offers an intuitive approach for users to craft controllable, realistic, fully-realized 3D characters that meet their expectations within 2 minutes, while also enabling easy integration with existing CG pipeline for dynamic expressiveness.
+          </p>
+        </div>
+      </div>
+<!--    </div>-->
+<!--  </div>-->
+</section>
+<!-- End paper abstract -->
+
+
+
+
+  <!-- Method -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-2">Method</h2>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="static/images/framework/text2live2d_pipeline_project.png" alt="MY ALT TEXT" style="width: 100%; height: 100%;" />
+        </div>
+        <div class="item">
+          <h2 class="content has-text-justified">
+            <p style="font-size: 1.0em;">
+              The overview of <b>Text2Live2D</b>. The framework utilizes the Large Language Model (LLM) to extract various facial attributes(e.g., face shape,
+              eyes shape, mouth shape, hairstyle and color, glasses type). These semantic attributes are then mapped to
+              corresponding visual clues, which in turn guide the generation of reference portrait image using Stable
+              Diffusion along with ControlNet. Through a series of 2D face parsing and 3D generation modules, the mesh
+              and textures of the target face are generated and assembled along with additional matched accessories.
+              The parameterized representation enable easy animation of the generated 3D avatar.
+          </p>
+          </h2>
+
+          <!-- <h2 class="title is-3">Post-Hoc Refiner</h2> -->
+
+        </div>
+               </div>
+             </div>
+  </section>
+  <!-- End Method -->
+
+
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+        <h2 class="title is-2">Features</h2>
+
+           <h2 class="title is-4">Controllable</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our system empowers users with the ability to customize detailed facial features, including the shape of the face, eyes, the color of the iris, hairstyles and colors, types of eyebrows, mouths, and noses, as well as the addition of wrinkles and freckles. This customization is facilitated by intuitive text prompts, offering a user-friendly interface for personalized character creation.
+           </p>
+
+          <h2 class="title is-4">Highly-Realistic</h2>
+        <div class="content has-text-justified">
+          <p>
+            The characters are generated based on a collected dataset of real human scans. Additionally, their hairs are built as strands rather than meshes. The characters are rendered using PBR (Physically Based Rendering) techniques in Unreal Engine, which is renowned for its high-quality real-time rendering capabilities.
+              </p>
+
+          <h2 class="title is-4">Fully-Completed</h2>
+        <div class="content has-text-justified">
+          <p>
+            Each character we create is a complete model, including eyes, tongue, teeth, a full body, and garments. This holistic approach ensures that our characters are ready for immediate use in a variety of situations without the need for additional modeling.
+          </p>
+
+
+                  <h2 class="title is-4">Animatable</h2>
+        <div class="content has-text-justified">
+          <p>
+           Our characters are equipped with sophisticated skeletal rigs, allowing them to support standard animations. This contributes to their lifelike appearance and enhances their versatility for various dynamic scenarios.
+          </p>
+
+          <h2 class="title is-4">Industry-Compatible</h2>
+        <div class="content has-text-justified">
+          <p>
+          Our method utilizes explicit 3D representation, ensuring seamless integration with standard CG pipelines employed in the game and film industries.
+          </p>
+
+
+        </div>
+      </div>
+<!--    </div>-->
+<!--  </div>-->
+</section>
+
+
+  <!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Paper video. -->
+      <h2 class="title is-2">Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/f6hkGOr_Xrc?si=08e7kIjwLTzqA7d_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+  <!-- Video carousel -->
+
+  <style>
+    .results-carousel {
+    display: flex;
+    justify-content: center;
+  }
+  .item video {
+    width: 100%; /* 视频宽度自适应容器宽度 */
+    height: auto; /* 视频高度根据比例自适应 */
+    max-height: 60vh; /* 视频最大高度不超过视窗高度的50% */
+  }
+
+  .item p {-->
+    margin-top: 30px; /* 在视频和描述文字之间添加一些间距 */-->
+  }-->
+<!--</style>-->
+
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2">Created Characters & Prompts</h2>
+      <p>Text2Live2D supports both English and Chinese prompts.</p>
+      <div id="results-carousel" class="carousel results-carousel">
+
+
+                 <div class="item item-video1">
+          <video poster="" id="video2" autoplay controls muted loop>
+            <source src="static/videos/showcases/1b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          A young，cute Asian woman, with a round doll-like face, thin lips, and black, double ponytail hairstyle.
+          </h2>
+        </div>
+
+
+            <div class="item item-video1">
+          <video poster="" id="video10" autoplay controls muted loop>
+            <source src="static/videos/showcases/7b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          A cool girl, sporting ear-length short hair, freckles on her cheek.
+          </h2>
+        </div>
+
+
+
+<!--          <div class="item item-video1">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop>-->
+<!--            <source src="static/videos/showcases/3a.mp4" type="video/mp4">-->
+<!--          </video>-->
+<!--          <h2 class="subtitle has-text-centered">-->
+<!--          一个深红嘴唇，蓝色眼眸，紫色波波头的女孩.-->
+<!--          </h2>-->
+<!--        </div>-->
+
+          <div class="item item-video1">
+          <video poster="" id="video4" autoplay controls muted loop>
+            <source src="static/videos/showcases/3b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          A girl with deep red lips, blue eyes, and a purple bob haircut.
+          </h2>
+        </div>
+
+
+<!--                  <div class="item item-video1">-->
+<!--          <video poster="" id="video5" autoplay controls muted loop>-->
+<!--            <source src="static/videos/showcases/5a.mp4" type="video/mp4">-->
+<!--          </video>-->
+<!--          <h2 class="subtitle has-text-centered">-->
+<!--          男士，单眼皮，平眉，褐色的头发，脸上有痣.-->
+<!--          </h2>-->
+<!--        </div>-->
+
+                          <div class="item item-video1">
+          <video poster="" id="video6" autoplay controls muted loop>
+            <source src="static/videos/showcases/5b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          A man with single eyelids, straight eyebrows, brown hair, and a mole on his face.
+          </h2>
+        </div>
+
+<!--          <div class="item item-video1">-->
+<!--          <video poster="" id="video7" autoplay controls muted loop>-->
+<!--            <source src="static/videos/showcases/2a.mp4" type="video/mp4">-->
+<!--          </video>-->
+<!--          <h2 class="subtitle has-text-centered">-->
+<!--          亚洲女士，鹅蛋脸，厚嘴唇，头发呈现黑色，长度及肩，眉毛修长而整齐.-->
+<!--          </h2>-->
+<!--        </div>-->
+
+                  <div class="item item-video1">
+          <video poster="" id="video8" autoplay controls muted loop>
+            <source src="static/videos/showcases/2b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          An Asian lady, with an oval face, thick lips, black hair that reaches her shoulders, she has slender and neatly trimmed eyebrows.
+          </h2>
+        </div>
+
+                          <div class="item item-video1">
+          <video poster="" id="video9" autoplay controls muted loop>
+            <source src="static/videos/showcases/6b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          An old man with wrinkles on his face, he has gray hair.
+          </h2>
+        </div>
+
+
+
+
+                                          <div class="item item-video1">
+          <video poster="" id="video11" autoplay controls muted loop>
+            <source src="static/videos/showcases/8b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          A chubby lady with round face.
+          </h2>
+        </div>
+
+                                                  <div class="item item-video1">
+          <video poster="" id="video12" autoplay controls muted loop>
+            <source src="static/videos/showcases/9b.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+          A boy with brown skin and black glasses, green hair.
+          </h2>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- End video carousel -->
+
+
+
+
+
+
+
+<style>
+    .results-carousel {
+    display: flex;
+    justify-content: center;
+  }
+  .item video {
+    width: 100%; /* 视频宽度自适应容器宽度 */
+    height: auto; /* 视频高度根据比例自适应 */
+    max-height: 60vh; /* 视频最大高度不超过视窗高度的50% */
+  }
+
+  .item p {-->
+    margin-top: 30px; /* 在视频和描述文字之间添加一些间距 */-->
+  }-->
+<!--</style>-->
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2">Text2Live2D + Audio-driven Talking</h2>
+      <p>The generated characters can be driven by audio.</p>
+      <div id="results-carousel" class="carousel results-carousel">
+
+         <div class="item item-video1">
+          <video poster="" id="video1"   controls="False" >
+            <source src="static/videos/audio2face/female.mp4" type="video/mp4">
+          </video>
+        </div>
+
+
+            <div class="item item-video1">
+          <video poster="" id="video2"   controls="False"  >
+            <source src="static/videos/audio2face/male.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@article{ren2023makeacharacter,
+      title={Text2Live2D: High Quality Text-to-3D Character Generation within Minutes},
+      author={Jianqiang Ren and Chao He and Lin Liu and Jiahao Chen and Yutong Wang and Yafei Song and Jianfang Li and Tangli Xue and Siqi Hu and Tao Chen and Kunkun Zheng and Jianjing Xiang and Liefeng Bo},
+      year={2023},
+      journal = {arXiv preprint arXiv:2312.15430}
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
