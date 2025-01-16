@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Text2Live2D">
-  <meta property="og:title" content="Text2Live2D"/>
-  <meta property="og:description" content="Text2Live2D"/>
+  <meta name="description" content="Textoon">
+  <meta property="og:title" content="Textoon"/>
+  <meta property="og:description" content="Textoon"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -14,8 +14,8 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Text2Live2D">
-  <meta name="twitter:description" content="Text2Live2D">
+  <meta name="twitter:title" content="Textoon">
+  <meta name="twitter:description" content="Textoon">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Text2Live2D</title>
+  <title>Textoon</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Text2Live2D: Generate diverse Live2D models using text</h1>
+            <h1 class="title is-1 publication-title">Textoon: Generate diverse Live2D models using text</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -115,7 +115,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/Human3DAIGC/Text2Live2D" target="_blank"
+                    <a href="https://github.com/Human3DAIGC/Textoon" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -187,7 +187,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            There is a growing demand for customized and expressive 3D characters with the emergence of AI agents and Metaverse, but creating 3D characters using traditional computer graphics tools is a complex and time-consuming task. To address these challenges, we propose a user-friendly framework named Text2Live2D (Mach) to create lifelike 3D avatars from text descriptions. The framework leverages the power of large language and vision models for textual intention understanding and intermediate image generation, followed by a series of human-oriented visual perception and 3D generation modules. Our system offers an intuitive approach for users to craft controllable, realistic, fully-realized 3D characters that meet their expectations within 2 minutes, while also enabling easy integration with existing CG pipeline for dynamic expressiveness.
+            The 2D cartoon style is a prominent art form in digital character creation, particularly popular among younger audiences. While advancements in digital human technology have spurred extensive research into photorealistic digital humans and 3D characters, interactive 2D cartoon characters have received comparatively less attention. Unlike 3D counterparts, which require sophisticated construction and resource-intensive rendering, Live2D, a widely-used format for 2D cartoon characters, offers a more efficient alternative, which allows to animate 2D characters in a manner that simulates 3D movement without the necessity of building a complete 3D model. Furthermore, Live2D employs lightweight HTML5 (H5) rendering, improving both accessibility and efficiency. In this technical report, we introduce Textoon, an innovative method for generating diverse 2D cartoon characters in the Live2D format based on text descriptions. The Textoon leverages cutting-edge language and vision models to comprehend textual intentions and generate 2D appearance, capable of creating a wide variety of stunning and interactive 2D characters within one minute.
           </p>
         </div>
       </div>
@@ -205,12 +205,12 @@
       <div class="container is-max-desktop">
         <h2 class="title is-2">Method</h2>
         <div style="display: flex; justify-content: center; align-items: center;">
-          <img src="static/images/framework/text2live2d_pipeline_project.png" alt="MY ALT TEXT" style="width: 100%; height: 100%;" />
+          <img src="static/images/framework/Textoon_pipeline_project.png" alt="MY ALT TEXT" style="width: 100%; height: 100%;" />
         </div>
         <div class="item">
           <h2 class="content has-text-justified">
             <p style="font-size: 1.0em;">
-              The overview of <b>Text2Live2D</b>. The framework utilizes the Large Language Model (LLM) to extract various facial attributes(e.g., face shape,
+              The overview of <b>Textoon</b>. The framework utilizes the Large Language Model (LLM) to extract various facial attributes(e.g., face shape,
               eyes shape, mouth shape, hairstyle and color, glasses type). These semantic attributes are then mapped to
               corresponding visual clues, which in turn guide the generation of reference portrait image using Stable
               Diffusion along with ControlNet. Through a series of 2D face parsing and 3D generation modules, the mesh
@@ -316,7 +316,7 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-2">Created Characters & Prompts</h2>
-      <p>Text2Live2D supports both English and Chinese prompts.</p>
+      <p>Textoon supports both English and Chinese prompts.</p>
       <div id="results-carousel" class="carousel results-carousel">
 
 
@@ -459,7 +459,7 @@
   <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-2">Text2Live2D + Audio-driven Talking</h2>
+      <h2 class="title is-2">Textoon + Audio-driven Talking</h2>
       <p>The generated characters can be driven by audio.</p>
       <div id="results-carousel" class="carousel results-carousel">
 
@@ -489,7 +489,7 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>
 @article{ren2023makeacharacter,
-      title={Text2Live2D: High Quality Text-to-3D Character Generation within Minutes},
+      title={Textoon: High Quality Text-to-3D Character Generation within Minutes},
       author={Jianqiang Ren and Chao He and Lin Liu and Jiahao Chen and Yutong Wang and Yafei Song and Jianfang Li and Tangli Xue and Siqi Hu and Tao Chen and Kunkun Zheng and Jianjing Xiang and Liefeng Bo},
       year={2023},
       journal = {arXiv preprint arXiv:2312.15430}
