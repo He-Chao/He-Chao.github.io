@@ -210,12 +210,9 @@
         <div class="item">
           <h2 class="content has-text-justified">
             <p style="font-size: 1.0em;">
-              The overview of <b>Textoon</b>. The framework utilizes the Large Language Model (LLM) to extract various facial attributes(e.g., face shape,
-              eyes shape, mouth shape, hairstyle and color, glasses type). These semantic attributes are then mapped to
-              corresponding visual clues, which in turn guide the generation of reference portrait image using Stable
-              Diffusion along with ControlNet. Through a series of 2D face parsing and 3D generation modules, the mesh
-              and textures of the target face are generated and assembled along with additional matched accessories.
-              The parameterized representation enable easy animation of the generated 3D avatar.
+              The overview of <b>Textoon</b>. This framework leverages fine-tuned LLMs to accurately extract component description words from user input text, using the corresponding components to control 
+              the appearance generation of 2D cartoon characters. It allows users to re-edit details and uses the components to extract and complete the generated images into Live2D model textures. 
+              The resulting Live2D models are diverse and compatible with original animation.
           </p>
           </h2>
 
@@ -234,39 +231,39 @@
 <!--      <div class="column is-four-fifths">-->
         <h2 class="title is-2">Features</h2>
 
-           <h2 class="title is-4">Controllable</h2>
+           <h2 class="title is-4">Accurate Text Parsing</h2>
         <div class="content has-text-justified">
           <p>
-            Our system empowers users with the ability to customize detailed facial features, including the shape of the face, eyes, the color of the iris, hairstyles and colors, types of eyebrows, mouths, and noses, as well as the addition of wrinkles and freckles. This customization is facilitated by intuitive text prompts, offering a user-friendly interface for personalized character creation.
+            Our text parsing model excels at extracting detailed information from complex user descriptions. It accurately identifies features such as back hair, side hair, bangs, eye color, eyebrows, face shape, clothing type, and shoe type. This advanced text parsing capability allows for more flexible user inputs.
            </p>
 
-          <h2 class="title is-4">Highly-Realistic</h2>
+          <h2 class="title is-4">Controllable Appearance Generation</h2>
         <div class="content has-text-justified">
           <p>
-            The characters are generated based on a collected dataset of real human scans. Additionally, their hairs are built as strands rather than meshes. The characters are rendered using PBR (Physically Based Rendering) techniques in Unreal Engine, which is renowned for its high-quality real-time rendering capabilities.
+            After parsing the text, each component is synthesized into a comprehensive character template. The contour boundaries offer precise control over the shape of the generated character, while a text-to-image model takes charge of generating the inner color and texture.
               </p>
 
-          <h2 class="title is-4">Fully-Completed</h2>
+          <h2 class="title is-4">Editable</h2>
         <div class="content has-text-justified">
           <p>
-            Each character we create is a complete model, including eyes, tongue, teeth, a full body, and garments. This holistic approach ensures that our characters are ready for immediate use in a variety of situations without the need for additional modeling.
+            If users are not satisfied with the initial generated result and wish to modify specific details,our framework provides assistance in selecting specific positions to add, remove, or modify elements.
           </p>
 
 
-                  <h2 class="title is-4">Animatable</h2>
+                  <h2 class="title is-4">Animation</h2>
         <div class="content has-text-justified">
           <p>
-           Our characters are equipped with sophisticated skeletal rigs, allowing them to support standard animations. This contributes to their lifelike appearance and enhances their versatility for various dynamic scenarios.
+            The control coefficients for the Live2D model's mouth primarily include MouthOpenY and MouthForm. MouthOpenY controls the vertical movement of the mouth, while MouthForm adjusts the expressions, such as upturning and grimacing. However, these controls often result in suboptimal driving performance. To enhance the accuracy of speech animations for cartoon characters, we integrate ARKit's face blend shape capabilities into the Live2D lip-sync functionality. This integration significantly improves the realism and precision of the animated speech.
           </p>
 
           <h2 class="title is-4">Industry-Compatible</h2>
-        <div class="content has-text-justified">
+        <!-- <div class="content has-text-justified">
           <p>
           Our method utilizes explicit 3D representation, ensuring seamless integration with standard CG pipelines employed in the game and film industries.
           </p>
 
 
-        </div>
+        </div> -->
       </div>
 <!--    </div>-->
 <!--  </div>-->
@@ -284,7 +281,7 @@
 
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/f6hkGOr_Xrc?si=08e7kIjwLTzqA7d_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/cA0yNZwyGTo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
